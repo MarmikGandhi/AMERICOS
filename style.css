@@ -1192,7 +1192,7 @@ section p {
     color: white;
 
     background:
-        radial-gradient(ellipse at 15% 80%,
+        radial-gradient(ellipse at 30% 100%,
             rgba(27, 68, 151, 0.35), transparent 45%),
         radial-gradient(ellipse at 100% 30%,
             rgba(231, 82, 109, 0.25), transparent 40%),
