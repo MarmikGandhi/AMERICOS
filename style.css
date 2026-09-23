@@ -1,7 +1,11 @@
 /* 1. GLOBAL / BASE STYLES */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
-/* Headings — The Seasons alternative */
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+/* Headings */
 h1,
 h2,
 h3,
@@ -11,16 +15,25 @@ h6 {
     font-family: "DM Serif Display", serif;
 }
 
-/* Paragraphs / normal text — Reckless alternative */
-body,
-p,
-span,
-li,
+/* Paragraphs and descriptive text */
+p {
+    font-family: "Playfair Display", serif;
+}
+
+/* Keep navigation, buttons and UI text clean */
 a,
 button,
 input,
-textarea {
-    font-family: "Playfair Display", serif;
+textarea,
+.destop-nav,
+.button,
+.eyebrow,
+.Micro-labels,
+.method,
+.info,
+.footer-links,
+.footer-right {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
