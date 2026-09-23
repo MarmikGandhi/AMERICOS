@@ -678,13 +678,123 @@ section p {
     font-size: clamp(36px, 5vw, 58px);
 }
 
+/* ================================
+   MATERIAL CARDS
+================================ */
+
 .materials-gird {
     width: min(var(--container), 90%);
     margin: 0 auto;
+
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
+
+.materials-card {
+    background: #1c1d20;
+    padding: 18px;
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.materials-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+
+/* IMAGE */
+
+.materials-card .way-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: #f1f1ef;
+
+    margin-bottom: 22px;
+}
+
+.materials-card .way-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.materials-card:hover .way-image img {
+    transform: scale(1.05);
+}
+
+
+/* TITLE */
+
+.materials-card h3 {
+    margin: 0 0 16px;
+
+    color: #fff;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* EXISTING CONTENT INSIDE YOUR CARD */
+
+.materials-card p {
+    color: #bfc0c5;
+
+    font-size: 11px;
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+
+/* LINKS / BUTTONS YOU ALREADY HAVE */
+
+.materials-card a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    transition: color 0.3s ease;
+}
+
+.materials-card a:hover {
+    color: var(--coral);
+}
+
+
+/* DIVIDER IF YOUR HTML HAS ONE */
+
+.materials-card hr {
+    border: 0;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    margin: 18px 0;
+}
+
 
 .materials-card {
     min-width: 0;
@@ -830,6 +940,27 @@ section p {
     .way-image {
         min-height: 420px;
     }
+}
+
+@media (max-width: 1050px) {
+
+    .materials-gird {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .materials-gird {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .materials-card {
+        padding: 14px;
+    }
+
 }
 
 
