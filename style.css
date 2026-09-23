@@ -1194,8 +1194,8 @@ section p {
     background:
         radial-gradient(ellipse at 15% 100%,
             rgba(27, 68, 151, 0.35), transparent 45%),
-        radial-gradient(ellipse at 90% 30%,
-            rgba(110, 34, 48, 0.25), transparent 40%),
+        radial-gradient(ellipse at 100% 30%,
+            rgba(115, 29, 45, 0.25), transparent 40%),
         #0d0e12;
 
     border-bottom: 1px solid rgba(255,255,255,0.08);
